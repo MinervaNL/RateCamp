@@ -6,8 +6,7 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const ExpressError = require('./utils/ExpressError');
 const methodOverride = require('method-override');
-const Campground = require('./models/campground');
-const Review = require('./models/review');
+
 
 const campgrounds = require('./routes/campgrounds');
 const reviews = require('./routes/reviews');
