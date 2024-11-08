@@ -3,7 +3,7 @@ const router = express.Router();
 const catchAsync = require('../utils/catchAsync');
 const { isLoggedIn, validateCampground, isAuthor } = require('../middleware');
 const campgrounds = require('../controllers/campgrounds');
-const Campground = require('../models/campground');
+
 
 router.get('/', catchAsync(campgrounds.index))
 
